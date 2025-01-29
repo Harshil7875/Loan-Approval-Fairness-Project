@@ -22,7 +22,7 @@ This repository addresses **fairness** in loan approvals by examining and mitiga
 
 1. **`ECS289G_Term_Project`**  
    - **`data_cleaning.ipynb`**  
-     - **Goal**: Load raw HMDA data (in CSV, from `data.zip` or another source) and **select key columns** (demographic, SES, loan attributes, `action_taken`).  
+     - **Goal**: Load raw HMDA data (in CSV, from `data.zip`) and **select key columns** (demographic, SES, loan attributes, `action_taken`).  
      - Handles missing values: imputing `interest_rate`, preserving demographic info with placeholders.  
      - One-hot encodes categorical features and **saves** a clean CSV.
    
@@ -51,7 +51,7 @@ This repository addresses **fairness** in loan approvals by examining and mitiga
      - Achieves lower raw accuracy (~82.6%) but **improved fairness** across subgroups (less disparity).
 
 2. **`data.zip`**  
-   - May contain raw or partial HMDA data used in `data_cleaning.ipynb`.
+   - Contains raw HMDA data used in `data_cleaning.ipynb`.
 
 3. **`docs` Folder**  
    - Contains PDF files (e.g., `Step_2.pdf`, `important_questions.pdf`) with **supplementary details** about the methodology, steps, and questions driving this project.
